@@ -72,15 +72,15 @@ export default function CameraSnap() {
 		x.dispose();
 
 		const pct = conf * 100;
-		if (conf >= 0.5) {
+		if (conf >= 0.7) {
 			setTone('green');
-			setVerdict(`Good chance that's wal-mart bro • ${pct.toFixed(1)}%`);
-		} else if (conf >= 0.4) {
+			setVerdict(`Good chance that's Valvoline • ${pct.toFixed(1)}%`);
+		} else if (conf >= 0.8) {
 			setTone('yellow');
-			setVerdict(`Probably Walmart • ${pct.toFixed(1)}%`);
+			setVerdict(`Probably Valvoline • ${pct.toFixed(1)}%`);
 		} else {
 			setTone('red');
-			setVerdict(`Not Walmart • ${pct.toFixed(1)}%`);
+			setVerdict(`Not Valvoline • ${pct.toFixed(1)}%`);
 		}
 	}
 
